@@ -1,0 +1,26 @@
+header{
+    height: 75px
+}
+.logo{
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: inline-block;
+}
+header a{
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: inline-block;
+  -ms-transform: translateY(-150%);
+  transform: translateY(-150%);
+}
+main{
+    margin-top: 25px;
+}
