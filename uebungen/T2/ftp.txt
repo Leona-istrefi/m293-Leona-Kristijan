@@ -1,0 +1,7 @@
+open www.leonaistrefi.bplaced.net
+leonaistrefi
+Leeoona.08
+binary
+cd www
+put ftp.txt
+bye
