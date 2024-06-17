@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" modified="2024-06-17T07:43:54.407Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:126.0) Gecko/20100101 Firefox/126.0" etag="Jz1D-DDcdNUczccBvZGv" version="24.5.4" type="device">
+  <diagram name="Page-1" id="LcskZYilOu5OTB9oX9ll">
+    <mxGraphModel dx="1009" dy="784" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="eWKireGHhpQeA9r3hsC--1" value="Autoshop" style="text;spacingTop=-5;fontSize=18;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="70" y="30" width="230" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="eWKireGHhpQeA9r3hsC--2" value="" style="line;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="20" y="60" width="780" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="eWKireGHhpQeA9r3hsC--3" value="" style="line;strokeWidth=1" vertex="1" parent="1">
+          <mxGeometry x="20" y="90" width="780" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="eWKireGHhpQeA9r3hsC--4" value="Home" style="text;spacingTop=-5;" vertex="1" parent="1">
+          <mxGeometry x="20" y="70.00000000000009" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="eWKireGHhpQeA9r3hsC--5" value="About" style="text;spacingTop=-5;" vertex="1" parent="1">
+          <mxGeometry x="59.999999999999936" y="70.00000000000016" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="eWKireGHhpQeA9r3hsC--6" value="" style="verticalLabelPosition=bottom;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.graphics.iconGrid;strokeColor=#CCCCCC;gridSize=1,1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="15" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eWKireGHhpQeA9r3hsC--7" value="Blog &#xa;Logo" style="text;spacingTop=-5;align=center" vertex="1" parent="1">
+          <mxGeometry x="20" y="20" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eWKireGHhpQeA9r3hsC--8" value="Contact" style="text;spacingTop=-5;" vertex="1" parent="1">
+          <mxGeometry x="99.99999999999997" y="70.00000000000026" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="eWKireGHhpQeA9r3hsC--9" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.graphics.simpleIcon;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="245" y="130" width="360" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="eWKireGHhpQeA9r3hsC--10" value="&lt;b style=&quot;font-size: 24px;&quot;&gt;Herzlich willkommen!&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="290" y="250" width="270" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eWKireGHhpQeA9r3hsC--11" value="&lt;div align=&quot;left&quot;&gt;blbla Autoshop ist text text usw. usw&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="50" y="300" width="220" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
