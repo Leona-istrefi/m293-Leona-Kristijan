@@ -4,7 +4,7 @@ body {
     padding: 0;
 }
 .header {
-    background-color: #007bc7;
+    background-color:#2ca5f1;
     padding: 20px;
     color: white;
     display: flex;
@@ -17,6 +17,7 @@ body {
 .header h1 {
     margin: 0;
     font-size: 24px;
+    
 }
 .nav {
     background-color: #f5f5f5;
@@ -33,6 +34,7 @@ body {
     position: relative;
     text-align: center;
     color: white;
+   
 }
 .main img {
     width: 100%;
@@ -43,7 +45,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0, 123, 199, 0.8);
+    background:#2ea6f0b1;
     padding: 20px;
     border-radius: 10px;
 }
@@ -54,13 +56,14 @@ body {
 .main .text p {
     margin: 10px 0 0;
     font-size: 18px;
+    
 }
 .sidebar {
     position: fixed;
     right: 0;
     top: 100px;
     width: 50px;
-    background-color: #007bc7;
+    background-color:#2ca5f1;
 }
 .sidebar a {
     display: block;
@@ -71,7 +74,8 @@ body {
 }
 .content {
     padding: 20px;
-    text-align: center;
+    text-align: left;
+    
 }
 .content h3 {
     font-size: 24px;
@@ -84,4 +88,14 @@ body {
 .content a {
     color: #007bc7;
     text-decoration: none;
+}
+
+.content h2{
+    color: #2ca5f1;
+    font-weight: bolder
+}
+
+.content h1{
+    color: #2ca5f1;
+    font-weight:bolder
 }
