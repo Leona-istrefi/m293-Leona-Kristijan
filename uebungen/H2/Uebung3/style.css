@@ -1,6 +1,9 @@
 header{
     height: 75px
 }
+header div{
+    height: 100%;
+}
 .logo{
     height: auto;
     width: auto;
@@ -8,19 +11,40 @@ header{
     max-height: 100%;
     object-fit: contain;
     object-position: center;
-    display: inline-block;
 }
-header a{
-    height: auto;
-    width: auto;
+#logoicon{
+    float: left;
+}
+#homeicon{
+    float: right;
+}
+.headerhome{
+    display: inline-block;
+    height: 75px;
+}
+.headerhome img{
     max-width: 100%;
     max-height: 100%;
-    object-fit: contain;
-    object-position: center;
-    display: inline-block;
-  -ms-transform: translateY(-150%);
-  transform: translateY(-150%);
 }
+
 main{
     margin-top: 25px;
+}
+main div{
+    max-width: 100%;
+    max-height: 100%;
+}
+main p{
+    float: left;
+    width: 50%;
+}
+main img{
+    float: right;
+    width: 50%;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
 }
