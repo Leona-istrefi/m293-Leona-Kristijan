@@ -8,5 +8,6 @@ I created this Picture on a website called FreeLogoCreator, this is the Link to 
 ## Typographie 
 
 Title: H1
-Text: <p></p> 
+<br> 
+Text: With < p >   
 Color of Text: Black 
