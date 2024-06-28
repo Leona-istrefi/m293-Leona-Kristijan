@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demographische Datenerhebung</title>
+</head>
+<body>
+    <h2>Demographische Datenerhebung</h2>
+    
+    
+
+        <fieldset>
+            <legend>Persönliche Informationen</legend>
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="age">Alter:</label>
+            <input type="number" id="age" name="age" min="0" required><br><br>
+            
+            <label for="gender">Geschlecht:</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Männlich</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Weiblich</label>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Andere</label><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Kontaktinformationen</legend>
+            
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="phone">Telefonnummer:</label>
+            <input type="tel" id="phone" name="phone"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Wohnort</legend>
+            
+            <label for="country">Land:</label>
+            <select id="country" name="country" required>
+                <optgroup label="Europa">
+                    <option value="France">Schweiz</option>
+                    <option value="Germany">Deutschland</option>
+                    <option value="Italy">Italien</option>
+                </optgroup>
+                <optgroup label="Asien">
+                    <option value="China">China</option>
+                    <option value="Japan">Japan</option>
+                    <option value="India">Indien</option>
+                </optgroup>
+                <optgroup label="Nordamerika">
+                    <option value="USA">USA</option>
+                    <option value="Canada">Kanada</option>
+                    <option value="Mexico">Mexiko</option>
+                </optgroup>
+            </select><br><br>
+
+            <label for="city">Stadt:</label>
+            <input type="text" id="city" name="city" required><br><br>
+        </fieldset>
+
+        <input type="submit" value="Absenden">
+  
+</body>
+</html>
