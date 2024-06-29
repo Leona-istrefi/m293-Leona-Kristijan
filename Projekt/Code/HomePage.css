@@ -105,7 +105,15 @@ main {
 footer {
     background-color: rgba(0, 0, 0, 0.8); 
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 58px;
     margin-top: 200px;
+    
+    justify-content: space-between;
+}
+
+.Contact.Leona {
+    text-align: center;
+    flex: 1;
+    
 }
