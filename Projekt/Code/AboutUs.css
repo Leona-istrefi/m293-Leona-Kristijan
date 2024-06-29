@@ -66,12 +66,12 @@ main {
 }
 
 .member {
-    text-align: center;
+    text-align: left;
 }
 
 .image {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     background-color: #e4e4e4;
     display: flex;
     justify-content: center;
