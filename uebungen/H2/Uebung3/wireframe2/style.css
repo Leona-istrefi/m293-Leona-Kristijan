@@ -26,18 +26,18 @@ header div{
     max-width: 100%;
     max-height: 100%;
 }
-main{
+article{
     margin-top: 25px;
 }
-main div{
+article div{
     max-width: 100%;
     max-height: 100%;
 }
-main p{
+article p{
     float: left;
     width: 50%;
 }
-main img{
+article img{
     float: right;
     width: 50%;
 }

@@ -26,8 +26,8 @@ header div{
     max-width: 100%;
     max-height: 100%;
 }
-.blogsection{
-    width: 40%;
+article{
+    width: 50%;
     float: left;
 }
 main{
