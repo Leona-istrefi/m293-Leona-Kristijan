@@ -1,0 +1,50 @@
+header{
+    height: 75px
+}
+header div{
+    height: 100%;
+}
+.logo{
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+#logoicon{
+    float: left;
+}
+#homeicon{
+    float: right;
+}
+.headerhome{
+    display: inline-block;
+    height: 75px;
+}
+.headerhome img{
+    max-width: 100%;
+    max-height: 100%;
+}
+article{
+    margin-top: 25px;
+}
+article div{
+    max-width: 100%;
+    max-height: 100%;
+}
+article p{
+    float: left;
+    width: 50%;
+}
+article img{
+    float: right;
+    width: 50%;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}

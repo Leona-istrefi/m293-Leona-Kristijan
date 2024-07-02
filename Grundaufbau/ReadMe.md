@@ -6,13 +6,31 @@
 I created this Picture on a website called FreeLogoCreator, this is the Link to the website:  https://freelogocreator.com/.
 
 ## Typographie 
+<ul>
+  <li> Title: H1</li>
+  <li> Subtitle: h2</li>
+  <li> font-family: Arial, sans-serif</li>
+  <li> font-color: white </li>
+</ul>
 
-Title: H1
-<br> 
-Text: With < p >   
-Color of Text: Black 
+ ## Colors
 
-### Farbschema 
+#### Navbar
 
-![image](https://github.com/Leona-istrefi/m293-Leona-Kristijan/assets/142780434/22b8a3a5-3788-49d9-b72e-30b937ad4983)
+<ul> 
+  <li> Color: white</li>
+  <li> Background Color: rgba(0, 0, 0, 0.5)</li>
+  <li> Hover: rgba(255, 255, 255, 0.1) </li>
+</ul>
+ 
+#### Footer 
+
+<ul> 
+  <li> Color: white</li>
+  <li> Background-color: rgba(0, 0, 0, 0.8)</li>
+</ul>
+ 
+
+
+
 
