@@ -13,7 +13,6 @@ body {
     min-height: 100vh;
 }
 
-
 header {
     background-color: rgba(0, 0, 0, 0.5); 
     padding: 20px;
@@ -58,69 +57,59 @@ nav ul li a:hover {
 }
 
 main {
-    padding: 0px;
-}
-
-.welcome-section {
-    position: relative;
-    min-height: 300px; 
-    display: flex;
-    align-items: center;
-}
-
-
-footer {
-    background-color: rgba(0, 0, 0, 0.8); 
-    color: white;
-    text-align: left;
-    padding: 50px;
-    margin-top: 175px;
-    justify-content: space-between;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-  }
-  
-  .grid-item {
-   
     padding: 20px;
-  }
-
+}
 
 .team {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
     width: 100%;
     max-width: 1200px;
+    margin: auto;
 }
 
 .member {
     text-align: left;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+ 
 }
 
 .image {
-    width: 350px;
-    height: 350px;
+    width: 100%;
+    height: auto;
     background-color: #e4e4e4;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
 }
 
 .image img {
     max-width: 100%;
     max-height: 100%;
+    border-radius: 10px;
 }
 
+footer {
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white;
+    padding: 50px;
+    margin-top: auto;
+    text-align: left;
+}
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
 
-
-
-
-
-
+.grid-item {
+    padding: 20px;
+   
+}
