@@ -70,6 +70,45 @@ h1 {
 }
 
 
+@media screen and (max-width: 320px) {
+    form {
+        max-width: 280px;
+        padding: 10px;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"], select, button {
+        width: calc(100% - 10px);
+        padding: 6px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    form {
+        max-width: 320px;
+        padding: 15px;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"], select, button {
+        width: calc(100% - 15px);
+        padding: 7px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    form {
+        max-width: 360px;
+        padding: 20px;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"], select, button {
+        width: calc(100% - 20px);
+        padding: 8px;
+    }
+}
+
+
 @media screen and (min-width: 600px) {
     form {
         max-width: 400px;
