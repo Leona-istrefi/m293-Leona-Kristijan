@@ -1,15 +1,13 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0; 
-    background-image: url('fotos/Car1.jpg   ');
+    background-image: url('fotos/Car1.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; 
@@ -113,11 +111,40 @@ footer {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr; 
     grid-gap: 20px;
-  }
-  
-  .grid-item {
-   
+}
+
+.grid-item {
     padding: 20px;
-  }
+}
+
+
+@media screen and (min-width: 600px) {
+    .welcome-section {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+    .welcome-section {
+        min-height: 500px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .welcome-section {
+        min-height: 700px;
+    }
+}

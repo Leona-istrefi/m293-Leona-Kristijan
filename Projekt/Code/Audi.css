@@ -73,18 +73,20 @@ main {
 
 .container {
     display: flex;
+    flex-direction: column; /* Default: Stacked layout for small screens */
     justify-content: flex-start; 
-    align-items: center;
-    padding: 50px;
-    width: 80%;
+    align-items: center; /* Center-align for small screens */
+    padding: 20px; /* Adjust padding for small screens */
+    width: 100%; /* Full width for small screens */
     gap: 20px;
 }
 
 .image-container {
-    flex: 1.5;  
+    flex: 1; /* Adjust flex value for small screens */
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%; /* Full width for small screens */
 }
 
 .image-container img {
@@ -94,16 +96,18 @@ main {
 }
 
 .details-container {
-    flex: 1;
+    flex: 1; /* Adjust flex value for small screens */
     display: flex;
     flex-direction: column;
     justify-content: flex-start; 
-    align-items: flex-start;
-    margin-left: 20px; 
+    align-items: center; /* Center-align for small screens */
+    width: 100%; /* Full width for small screens */
+    margin-top: 20px; /* Adjust margin for small screens */
 }
 
 .details-container h2 {
     margin-top: 0;
+    text-align: center; /* Center-align text for small screens */
 }
 
 .details-grid {
@@ -137,4 +141,34 @@ main {
 .refresh-icon img {
     height: 24px;
     width: 24px;
+}
+
+
+
+@media screen and (min-width: 600px) {
+    .container {
+        flex-direction: row; 
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 50px;
+        width: 80%;
+    }
+
+    .image-container, .details-container {
+        flex: 1;
+        margin-top: 0;
+    }
+
+    .details-container {
+        align-items: flex-start;
+        margin-left: 20px;
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+    .container {
+        padding: 50px;
+        width: 80%;
+    }
 }

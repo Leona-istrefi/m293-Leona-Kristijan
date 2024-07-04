@@ -62,7 +62,7 @@ main {
 
 .team {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr;
     gap: 20px;
     justify-items: center;
     width: 100%;
@@ -76,7 +76,6 @@ main {
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 10px;
- 
 }
 
 .image {
@@ -105,11 +104,59 @@ footer {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: 1fr;
     gap: 20px;
 }
 
 .grid-item {
     padding: 20px;
-   
+}
+
+
+@media screen and (min-width: 600px) {
+    .team {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+    header .logo {
+        width: 150px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav ul li {
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        padding: 10px 20px;
+    }
+
+    .team {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    header h1 {
+        font-size: 40px;
+    }
+
+    .team {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
