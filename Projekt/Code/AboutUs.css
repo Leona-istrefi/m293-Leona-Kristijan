@@ -89,28 +89,21 @@
   footer {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
-    padding: 50px;
-    margin-top: auto;
     text-align: left;
-  }
-  footer .grid-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-  }
-  footer .grid-container .grid-item {
-    padding: 20px;
-  }
-  footer .grid-container .grid-item .Contact h4 {
-    margin-bottom: 10px;
-  }
-  footer .grid-container .grid-item .Contact ul {
-    list-style-type: none;
-  }
-  footer .grid-container .grid-item .Contact ul li {
-    margin-bottom: 10px;
+    padding: 50px;
+    margin-top: 175px;
+    justify-content: space-between;
   }
   
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  
+  .grid-item {
+    padding: 20px;
+  }
   @media screen and (min-width: 600px) {
     .team {
       grid-template-columns: repeat(2, 1fr);
