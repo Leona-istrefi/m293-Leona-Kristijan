@@ -29,8 +29,23 @@ I created this Picture on a website called FreeLogoCreator, this is the Link to 
   <li> Color: white</li>
   <li> Background-color: rgba(0, 0, 0, 0.8)</li>
 </ul>
- 
 
+## Breakspoints Responsiveness 
 
+#### Kleines Smartphone 
+
+<ul> 
+  <li> Max-Breite: 320px</li>
+</ul>
+
+#### Normales Smartphone 
+<ul> 
+  <li> Max-Breite: 480px</li>
+</ul> 
+
+#### Grosses Smartphone
+<ul> 
+  <li> Max-Breite: 600px</li>
+</ul>
 
 
