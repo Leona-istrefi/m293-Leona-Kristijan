@@ -62,7 +62,9 @@
     justify-items: center;
     width: 100%;
     max-width: 1200px;
-    margin: auto;
+    margin-left: 400px;
+    margin-top: 100px;
+   
   }
   .team .member {
     text-align: left;
