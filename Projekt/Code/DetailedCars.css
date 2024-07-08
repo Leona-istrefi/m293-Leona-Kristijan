@@ -136,29 +136,29 @@ main {
 
 @media screen and (min-width: 600px) {
   .container {
-    display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 50px;
-  width: 80%;
-  gap: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 50px;
+      width: 80%;
+      gap: 20px;
   }
 
   .image-container, .details-container {
-    flex: 1;
-    margin-top: 0;
+      flex: 1;
+      margin-top: 0;
   }
 
   .details-container {
-    align-items: flex-start;
-    margin-left: 20px;
+      align-items: flex-start;
+      margin-left: 20px;
   }
 }
 
 @media screen and (min-width: 900px) {
   .container {
-    padding: 50px;
-    width: 80%;
+      padding: 50px;
+      width: 80%;
   }
 }

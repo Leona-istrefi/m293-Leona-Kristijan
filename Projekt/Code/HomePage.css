@@ -119,30 +119,102 @@ footer {
 .grid-item {
   padding: 20px;
 }
+/* Kleine Smartphones (max-width: 320px) */
+@media screen and (max-width: 320px) {
+  header .logo {
+      width: 40px;
+  }
+
+  header h1 {
+      font-size: 18px;
+  }
+
+  .welcome-text h2 {
+      font-size: 24px;
+  }
+
+  .welcome-text p {
+      font-size: 14px;
+  }
+
+  footer {
+      padding: 10px;
+  }
+}
+
+/* Normale Smartphones (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  header .logo {
+      width: 45px;
+  }
+
+  header h1 {
+      font-size: 20px;
+  }
+
+  .welcome-text h2 {
+      font-size: 26px;
+  }
+
+  .welcome-text p {
+      font-size: 16px;
+  }
+
+  footer {
+      padding: 15px;
+  }
+}
+
+/* Große Smartphones (max-width: 600px) */
+@media screen and (max-width: 600px) {
+  header .logo {
+      width: 50px;
+  }
+
+  header h1 {
+      font-size: 22px;
+  }
+
+  .welcome-text h2 {
+      font-size: 28px;
+  }
+
+  .welcome-text p {
+      font-size: 17px;
+  }
+
+  footer {
+      padding: 20px;
+  }
+}
+
+/* Tablet Portrait  */
 @media screen and (min-width: 600px) {
   .welcome-section {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
   }
 
   .grid-container {
-    grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
   }
 }
 
+/* Tablet Landscape und kleinere Desktops  */
 @media screen and (min-width: 900px) {
   .welcome-section {
-    min-height: 500px;
+      min-height: 500px;
   }
 
   .grid-container {
-    grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 1fr);
   }
 }
 
+/* Große Desktops  */
 @media screen and (min-width: 1200px) {
   .welcome-section {
-    min-height: 700px;
+      min-height: 700px;
   }
 }

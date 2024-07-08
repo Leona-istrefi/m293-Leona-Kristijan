@@ -62,7 +62,9 @@
     justify-items: center;
     width: 100%;
     max-width: 1200px;
-    margin: auto;
+    margin-left: 400px;
+    margin-top: 100px;
+   
   }
   .team .member {
     text-align: left;
@@ -104,42 +106,42 @@
   .grid-item {
     padding: 20px;
   }
+  
   @media screen and (min-width: 600px) {
     .team {
-      grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
     .grid-container {
-      grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
-  }
-  
-  @media screen and (min-width: 900px) {
+}
+
+@media screen and (min-width: 900px) {
     header .logo {
-      width: 150px;
+        width: 100px;
     }
     header h1 {
-      font-size: 32px;
+        font-size: 32px;
     }
     nav ul li {
-      margin-right: 20px;
+        margin-right: 10px;
     }
     nav ul li a {
-      padding: 10px 20px;
+        padding: 10px 20px;
     }
     .team {
-      grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
     .grid-container {
-      grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
-  }
-  
-  @media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 1200px) {
     header h1 {
-      font-size: 40px;
+        font-size: 40px;
     }
     .team {
-      grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
-  }
-  
+}
