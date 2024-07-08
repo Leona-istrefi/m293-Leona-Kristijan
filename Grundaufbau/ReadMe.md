@@ -11,6 +11,7 @@ I created this Picture on a website called FreeLogoCreator, this is the Link to 
   <li> Subtitle: h2</li>
   <li> font-family: Arial, sans-serif</li>
   <li> font-color: white </li>
+  <li> Schriftgrösse: 16px </li>
 </ul>
 
  ## Colors
