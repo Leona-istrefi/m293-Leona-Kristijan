@@ -74,69 +74,68 @@ body {
     font-weight: normal;
   }
   
-  @media screen and (max-width: 320px) {
-    form {
+
+
+/* Kleine Smartphones*/
+@media screen and (max-width: 320px) {
+  form {
       max-width: 280px;
       padding: 10px;
-    }
-  
-    input[type="text"],
-    input[type="email"],
-    input[type="password"],
-    select,
-    button {
-      width: calc(100% - 12px);
-      padding: 6px;
-    }
   }
-  
-  @media screen and (max-width: 480px) {
-    form {
+
+  input[type="text"], input[type="email"], input[type="password"], select, button {
+      width: calc(100% - 10px);
+      padding: 6px;
+  }
+}
+
+/* Normale Smartphones */
+@media screen and (max-width: 480px) {
+  form {
       max-width: 320px;
       padding: 15px;
-    }
-  
-    input[type="text"],
-    input[type="email"],
-    input[type="password"],
-    select,
-    button {
-      width: calc(100% - 14px);
-      padding: 7px;
-    }
   }
-  
-  @media screen and (max-width: 600px) {
-    form {
+
+  input[type="text"], input[type="email"], input[type="password"], select, button {
+      width: calc(100% - 15px);
+      padding: 7px;
+  }
+
+  h1 {
+      font-size: 1.5em;
+  }
+}
+
+/* Große Smartphones */
+@media screen and (max-width: 600px) {
+  form {
       max-width: 360px;
       padding: 20px;
-    }
-  
-    input[type="text"],
-    input[type="email"],
-    input[type="password"],
-    select,
-    button {
-      width: calc(100% - 16px);
+  }
+
+  input[type="text"], input[type="email"], input[type="password"], select, button {
+      width: calc(100% - 20px);
       padding: 8px;
-    }
   }
-  
-  @media screen and (min-width: 600px) {
-    form {
+}
+
+/* Tablet Portrait  */
+@media screen and (min-width: 600px) {
+  form {
       max-width: 400px;
-    }
   }
-  
-  @media screen and (min-width: 900px) {
-    form {
+}
+
+/* Tablet Landscape und kleinere Desktops  */
+@media screen and (min-width: 900px) {
+  form {
       max-width: 500px;
-    }
   }
-  
-  @media screen and (min-width: 1200px) {
-    form {
+}
+
+/* Große Desktops  */
+@media screen and (min-width: 1200px) {
+  form {
       max-width: 600px;
-    }
   }
-  
+}
