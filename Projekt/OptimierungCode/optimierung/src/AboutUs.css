@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -54,12 +55,43 @@
     padding: 20px;
   }
   
+  .team {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    justify-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .team .member {
+    text-align: left;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+  }
+  .team .member .image {
+    width: 100%;
+    height: auto;
+    background-color: #e4e4e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .team .member .image img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+  }
+  
   footer {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     text-align: left;
     padding: 50px;
-    margin-top: 458px;
+    margin-top: 175px;
     justify-content: space-between;
   }
   
@@ -71,40 +103,43 @@
   
   .grid-item {
     padding: 20px;
-  } 
-
+  }
   @media screen and (min-width: 600px) {
     .team {
-        grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
     .grid-container {
-        grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
-}
-
-@media screen and (min-width: 900px) {
+  }
+  
+  @media screen and (min-width: 900px) {
     header .logo {
-        width: 100px;
+      width: 150px;
     }
     header h1 {
-        font-size: 32px;
+      font-size: 32px;
     }
     nav ul li {
-        margin-right: 10px;
+      margin-right: 20px;
     }
     nav ul li a {
-        padding: 10px 20px;
+      padding: 10px 20px;
     }
-   
+    .team {
+      grid-template-columns: repeat(2, 1fr);
+    }
     .grid-container {
-        grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
-}
-
-@media screen and (min-width: 1200px) {
+  }
+  
+  @media screen and (min-width: 1200px) {
     header h1 {
-        font-size: 40px;
+      font-size: 40px;
     }
-   
-}
-
+    .team {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  

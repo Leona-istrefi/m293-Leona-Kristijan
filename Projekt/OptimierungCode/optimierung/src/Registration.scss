@@ -1,0 +1,136 @@
+
+$font-family: Arial, sans-serif;
+$background-color: #f5f5f5;
+$form-background: white;
+$form-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+$input-border-color: #ccc;
+$button-background: #464646;
+$button-hover-background: #333333;
+$border-radius: 5px;
+$padding-small: 8px;
+$padding-medium: 10px;
+$padding-large: 20px;
+
+
+@mixin responsive-form($max-width, $padding, $input-padding) {
+  form {
+    max-width: $max-width;
+    padding: $padding;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select,
+  button {
+    width: calc(100% - #{$input-padding * 2});
+    padding: $input-padding;
+  }
+}
+
+
+body {
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $background-color;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+form {
+  width: 100%;
+  max-width: 300px;
+  padding: $padding-large;
+  background: $form-background;
+  border-radius: 10px;
+  box-shadow: $form-shadow;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+button {
+  width: calc(100% - 20px);
+  padding: $padding-small;
+  margin-bottom: 5px;
+  border: 1px solid $input-border-color;
+  border-radius: $border-radius;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+button {
+  background-color: $button-background;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: $padding-medium;
+  margin-top: 10px;
+
+  &:hover {
+    background-color: $button-hover-background;
+  }
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: $padding-small;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.form-group label {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 320px) {
+  @include responsive-form(280px, 10px, 6px);
+}
+
+@media screen and (max-width: 480px) {
+  @include responsive-form(320px, 15px, 7px);
+}
+
+@media screen and (max-width: 600px) {
+  @include responsive-form(360px, 20px, 8px);
+}
+
+@media screen and (min-width: 600px) {
+  form {
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  form {
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  form {
+    max-width: 600px;
+  }
+}
