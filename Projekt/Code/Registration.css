@@ -10,7 +10,17 @@ body {
     flex-direction: column;
     overflow: hidden;
   }
-  
+
+  header {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+  }
+header h1 {
+    font-size: 24px;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+  }
   form {
     width: 100%;
     max-width: 300px;
