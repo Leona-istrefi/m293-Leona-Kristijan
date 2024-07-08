@@ -110,6 +110,7 @@
     grid-template-columns: 1fr;
     grid-gap: 1rem;
     color: white;
+    margin-left: 50px;
   }
   
   .grid-container {
