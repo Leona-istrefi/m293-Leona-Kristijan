@@ -7,6 +7,8 @@ rm -r ./dist/fotos
 
 cp -r ./src/assets ./dist/assets
 cp -r ./src/fotos ./dist/fotos
+# scss -> css
+for i in src/*.scss; do npx sass $i:${i/scss/css}; done
 # minify
 npx html-minifier --input-dir ./src --output-dir ./dist --collapse-whitespace --file-ext html
 npx css-minify -d ./src -o ./dist
