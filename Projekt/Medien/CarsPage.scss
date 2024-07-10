@@ -1,0 +1,196 @@
+
+$primary-color: rgba(0, 0, 0, 0.5);
+$secondary-color: rgba(0, 0, 0, 0.8);
+$highlight-color: rgba(255, 255, 255, 0.1);
+$font-color: white;
+$background-color: #f0f0f0;
+$font-family: Arial, sans-serif;
+$padding-small: 10px;
+$padding-medium: 20px;
+$padding-large: 50px;
+$border-radius: 5px;
+$card-bg-color: rgba(0, 0, 0, 0.5);
+$shadow-color: rgba(0, 0, 0, 0.2);
+
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin grid-layout($columns) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  grid-gap: 1rem;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  background-color: $background-color;
+  background-image: url('fotos/Car1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: $font-color;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: $primary-color;
+  padding: $padding-medium;
+  text-align: center;
+
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-top: $padding-small;
+  }
+}
+
+nav {
+  background-color: $primary-color;
+  padding: $padding-small;
+  text-align: center;
+
+  ul {
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+      margin-right: $padding-small;
+
+      a {
+        color: $font-color;
+        text-decoration: none;
+        padding: $padding-small $padding-medium;
+
+        &:hover {
+          background-color: $highlight-color;
+          border-radius: $border-radius;
+        }
+      }
+    }
+  }
+}
+
+main {
+  padding: 0;
+}
+
+.welcome-section {
+  position: relative;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  background-color: $secondary-color;
+  color: $font-color;
+  text-align: left;
+  padding: $padding-large;
+  margin-top: 175px;
+  justify-content: space-between;
+}
+
+.card-style {
+  background-color: $card-bg-color;
+  height: 450px;
+  width: 350px;
+  box-shadow: 0 4px 8px 0 $shadow-color;
+  border-radius: $border-radius * 2;
+  color: black;
+  text-align: left;
+}
+
+.image-style {
+  height: 250px;
+  width: 350px;
+  object-fit: cover;
+  border-top-left-radius: $border-radius * 2;
+  border-top-right-radius: $border-radius * 2;
+}
+
+.card-content {
+  padding: 15px;
+  height: 100px;
+  text-overflow: ellipsis;
+
+  h2 {
+    color: $font-color;
+  }
+}
+
+.card-grid {
+  @include grid-layout(1);
+  color: $font-color;
+}
+
+.grid-container {
+  @include grid-layout(1);
+  grid-gap: 20px;
+}
+
+.grid-item {
+  padding: $padding-medium;
+}
+
+.btn-primary {
+  color: $font-color;
+  border: none;
+  padding: $padding-small $padding-medium;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: $border-radius;
+
+  &:hover {
+    background-color: $highlight-color;
+    border-radius: $border-radius;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .card-grid {
+    @include grid-layout(2);
+  }
+
+  .grid-container {
+    @include grid-layout(2);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card-grid {
+    @include grid-layout(3);
+  }
+
+  .grid-container {
+    @include grid-layout(3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-grid {
+    @include grid-layout(4);
+  }
+
+  .grid-container {
+    @include grid-layout(3);
+  }
+}

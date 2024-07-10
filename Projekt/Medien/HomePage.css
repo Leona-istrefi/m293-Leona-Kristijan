@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  background-image: url('fotos/Car1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  text-align: center;
+}
+
+header .logo {
+  width: 100px;
+  height: auto;
+}
+
+header h1 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+main {
+  padding: 0;
+  margin: 0;
+}
+
+.welcome-section {
+  position: relative;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.welcome-section .background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('fotos/Car1.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  z-index: -1;
+}
+
+.welcome-section .welcome-text {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.welcome-section .welcome-text h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.welcome-section .welcome-text p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.ad-video{
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+.ad-video video{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: left;
+  padding: 50px;
+  margin-top: 0px;
+  justify-content: space-between;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.grid-item {
+  padding: 20px;
+}
+/* Kleine Smartphones (max-width: 320px) */
+@media screen and (max-width: 320px) {
+  header .logo {
+      width: 40px;
+  }
+
+  header h1 {
+      font-size: 18px;
+  }
+
+  .welcome-text h2 {
+      font-size: 24px;
+  }
+
+  .welcome-text p {
+      font-size: 14px;
+  }
+
+  footer {
+      padding: 10px;
+  }
+  .ad-video video{
+    width: 75%;
+  }
+}
+
+/* Normale Smartphones (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  header .logo {
+      width: 45px;
+  }
+
+  header h1 {
+      font-size: 20px;
+  }
+
+  .welcome-text h2 {
+      font-size: 26px;
+  }
+
+  .welcome-text p {
+      font-size: 16px;
+  }
+
+  footer {
+      padding: 15px;
+  }
+  .ad-video video{
+    min-width: 95%;
+  }
+}
+
+/* Große Smartphones (max-width: 600px) */
+@media screen and (max-width: 600px) {
+  header .logo {
+      width: 50px;
+  }
+
+  header h1 {
+      font-size: 22px;
+  }
+
+  .welcome-text h2 {
+      font-size: 28px;
+  }
+
+  .welcome-text p {
+      font-size: 17px;
+  }
+
+  footer {
+      padding: 20px;
+  }
+  .ad-video video{
+    width: 90%;
+  }
+}
+
+/* Tablet Portrait  */
+@media screen and (min-width: 600px) {
+  .welcome-section {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  .ad-video video{
+    max-width: 75%;
+    width: 75%;
+  }
+}
+
+/* Tablet Landscape und kleinere Desktops  */
+@media screen and (min-width: 900px) {
+  .welcome-section {
+      min-height: 500px;
+  }
+
+  .grid-container {
+      grid-template-columns: repeat(3, 1fr);
+  }
+  .ad-video video{
+    width: 50%;
+  }
+}
+
+/* Große Desktops  */
+@media screen and (min-width: 1200px) {
+  .welcome-section {
+      min-height: 700px;
+  }
+  .ad-video video{
+    width: 50%;
+  }
+}
